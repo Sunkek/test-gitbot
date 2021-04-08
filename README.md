@@ -23,6 +23,8 @@ I'll have the bot running for a few days on my cloud. You can find it under `@Te
 
 It's clumsy, but it works. I've left a few todo comments in the code for what could be improved.
 
+Makes sense to add a docker bind mount so `zip/` directory is presistent through container restarts.
+
 Would also be great to check if the requested zip is actual instead of 
 refreshing only the files which are older than a week, 
 but it involves complications with git api auth, or at least scraping github.

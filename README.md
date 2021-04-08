@@ -25,6 +25,8 @@ It's clumsy, but it works. I've left a few todo comments in the code for what co
 
 Makes sense to add a docker bind mount so `zip/` directory is presistent through container restarts.
 
+It's easier to use a TG bot that has buttons. Would be nice to add a `/repo` button with consequent owner/repository input.
+
 Would also be great to check if the requested zip is actual instead of 
 refreshing only the files which are older than a week, 
 but it involves complications with git api auth, or at least scraping github.

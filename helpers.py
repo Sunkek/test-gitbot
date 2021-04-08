@@ -17,7 +17,7 @@ def zipdir(path, ziph):
 def rmdir(path):
     for root, dirs, files in os.walk(path):  
         for name in dirs:
-            os.chmod(path.join(root, name), stat.S_IRWXU)
+            os.chmod(os.path.join(root, name), stat.S_IWRITE)
         for name in files:
-            os.chmod(path.join(root, name), stat.S_IRWXU)
+            os.chmod(os.path.join(root, name), stat.S_IWRITE)
     shutil.rmtree(path)

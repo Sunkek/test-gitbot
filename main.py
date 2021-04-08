@@ -63,7 +63,6 @@ async def ziprepo(message: types.Message):
             logging.info(f"Cloned {repo}")
         except git.exc.GitCommandError as e:
             logging.error(f"Failed to clone {repo}: {e}")
-            helpers.rmdir(temp_path)
             return await message.reply(
                 f"There is no `{repo}` repo on GitHub!",
                 parse_mode="Markdown",

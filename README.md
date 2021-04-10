@@ -1,5 +1,7 @@
 # test-gitbot
 
+A Telegram bot that returns you the repository you wanted as a zip file.
+
 ## Installation
 
 You must have Docker on your machine.
